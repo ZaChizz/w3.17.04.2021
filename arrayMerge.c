@@ -13,10 +13,10 @@ void arrayMerge(int target[], int src1[], int len1, int src2[], int len2) {
         }
     }
 
-    for ( ; i < len1; k++, i++ ) {
+    for ( ; i < len1; i++, k++ ) {
         target[k] = src1[i];
     }
-    for ( ; j < len2; k++, j++ ) {
+    for ( ; j < len2; j++, k++ ) {
         target[k] = src2[j];
     }
 }
