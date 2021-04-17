@@ -1,7 +1,13 @@
 #include <stdio.h>
 
 void merge(int array[], int lo, int mid, int hi) {
+    int tmp[hi-lo];
+
     // code should be here
+
+    for ( int i = 0, j = lo; j < hi; i++, j++ ) {
+        array[j] = tmp[i];
+    }
 }
 
 void arrayPrint(int array[], int size) {
