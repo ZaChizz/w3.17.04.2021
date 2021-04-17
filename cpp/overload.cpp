@@ -4,6 +4,10 @@ int increment(int value) {
     return value + 1;
 }
 
+float increment(float value) {
+    return value + 5;
+}
+
 char increment(char value) {
     return value + 1;
 }
@@ -19,7 +23,7 @@ long increment(long value) {
 int main() {
     std::cout << increment(10) << std::endl;
     std::cout << increment('A') << std::endl;
-    std::cout << increment(10.4) << std::endl;
+    std::cout << increment((float)10.4) << std::endl;
     std::cout << increment(10L) << std::endl;
     return 0;
 }
