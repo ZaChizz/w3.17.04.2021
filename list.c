@@ -85,3 +85,9 @@ int main() {
 
     return 0;
 }
+
+// TODO:
+// bidirectional list
+// memory leaks (stack/queue cases)
+// iterators
+// free
