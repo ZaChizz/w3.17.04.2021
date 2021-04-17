@@ -42,10 +42,8 @@ void mergeSort(int array[], int start, int end) {
     int middle = (start + end) / 2;
 
     if ( start < middle ) {
-        printf("RECURSION CALL => start:%d middle:%d end:%d\n", start, middle, end);
         mergeSort(array, start, middle);
         mergeSort(array, middle, end);
-        printf("MERGE CALL => start:%d middle:%d end:%d\n", start, middle, end);
         merge(array, start, middle, end);
     }
 }
