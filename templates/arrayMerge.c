@@ -1,24 +1,7 @@
 #include <stdio.h>
 
 void arrayMerge(int target[], int src1[], int len1, int src2[], int len2) {
-    int i = 0, j = 0, k = 0;
-
-    for ( ; i < len1 && j < len2; k++ ) {
-        if ( src1[i] < src2[j] ) {
-            target[k] = src1[i];
-            i += 1;
-        } else {
-            target[k] = src2[j];
-            j += 1;
-        }
-    }
-
-    for ( ; i < len1; k++, i++ ) {
-        target[k] = src1[i];
-    }
-    for ( ; j < len2; k++, j++ ) {
-        target[k] = src2[j];
-    }
+    // your code should be here
 }
 
 void arrayPrint(int array[], int size) {

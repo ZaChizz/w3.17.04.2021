@@ -3,12 +3,10 @@
 #define MAX_CELL 100
 
 int main() {
-    FILE *in = fopen("task.in", "r");
-    FILE *out = fopen("task.out", "w");
-    int maxJump, cell;
+    int maxJump = 5, cell = 8;
     unsigned long long ways[MAX_CELL];
 
-    fscanf(in, "%d %d", &maxJump, &cell);
+    scanf("%d %d", &maxJump, &cell);
 
     for (int i = 0; i < maxJump; i++ ) {
         ways[i] = 1 << i;
@@ -24,7 +22,7 @@ int main() {
         ways[i] = way;
     }
 
-    fprintf(out, "%llu\n", ways[cell-1]);
+    printf("%llu\n", ways[cell-1]);
 
     return 0;
 }
